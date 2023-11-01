@@ -1,0 +1,10 @@
+// extand classes
+%dflex {
+    display: flex;
+
+    &--center {
+        @extend %dflex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["scss/_resets-general.scss","scss/_assets.scss","scss/_header-footer.scss"],"names":[],"mappings":"AAAA;EACI;;;AAGJ;EACI;EACA;EAEA;EACA;;;ACRJ;EACI;;AAEA;EAEI;EACA;;;ACLR;EAEI;EACA;EAGA,YADe;;AAGf;EAGI,YANW;EAOX;;AAEA;EACI;EACA;EACA;;AAEJ;EACI;EACA;;AAIR;EAEI;;AAYR;EAGY;IACI","file":"style.css"}
