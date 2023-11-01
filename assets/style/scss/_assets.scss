@@ -8,3 +8,40 @@
         justify-content: center;
     }
 }
+
+%underlineGradient {
+    background-image: linear-gradient(to right, #EFEEEE, #E5E5E5, #EF2615, #365AC0, #112E81); /* Dégradé horizontal de rouge à vert */
+    background-size: 100% 2px; /* Largeur de la bordure de 3 pixels, ajustez selon vos besoins */
+    background-position: 0 100%; /* Positionnez le dégradé en bas de l'élément */
+    background-repeat: no-repeat; /* Empêche la répétition du dégradé */
+}
+
+
+
+// OO Classes
+.separator--round {
+    $size: 3px;
+    height: $size;
+    width: $size;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.btn {
+    padding: 0.75em 1.5em;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 1em;
+    background-color: rgb(247, 247, 247);
+    
+    text-decoration: none;
+    color: black;
+    
+    &--roundest {
+        @extend .btn;
+        border-radius: 100px;        
+    }
+}
+
+.bold {
+    font-weight: 500;
+}

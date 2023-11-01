@@ -4,9 +4,13 @@
     @extend %dflex;
     justify-content: space-between;
     align-items: center;
-
+    
     $headerHeight: 4.5rem;
     max-height: $headerHeight;
+    
+    padding-bottom: 2px;
+    padding-right: 1.75rem;
+    @extend %underlineGradient;
 
     &_logo {
         @extend %dflex--center;
