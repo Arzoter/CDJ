@@ -19,14 +19,10 @@ html, body {
 }
 
 .header {
-  background-image: linear-gradient(to right, #EFEEEE, #E5E5E5, #EF2615, #365AC0, #112E81);
-  /* Dégradé horizontal de rouge à vert */
-  background-size: 100% 2px;
-  /* Largeur de la bordure de 3 pixels, ajustez selon vos besoins */
-  background-position: 0 100%;
-  /* Positionnez le dégradé en bas de l'élément */
-  background-repeat: no-repeat;
-  /* Empêche la répétition du dégradé */
+  background-image: linear-gradient(to right, #EFEEEE, #E5E5E5, #EF2615, #365AC0, #112E81); /* Dégradé horizontal de rouge à vert */
+  background-size: 100% 2px; /* Largeur de la bordure de 3 pixels, ajustez selon vos besoins */
+  background-position: 0 100%; /* Positionnez le dégradé en bas de l'élément */
+  background-repeat: no-repeat; /* Empêche la répétition du dégradé */
 }
 
 .separator--round {
@@ -75,6 +71,10 @@ html, body {
 .header_nav, .header_nav--connect {
   gap: 1rem;
 }
+.footer {
+  background-color: grey;
+}
+
 @media screen and (max-width: 750px) {
   .header_logo h1 {
     display: none;
@@ -94,8 +94,7 @@ html, body {
   inset: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Couleur de l'obscurcissement avec une opacité de 0.5 (50%) */
+  background-color: rgba(0, 0, 0, 0.5); /* Couleur de l'obscurcissement avec une opacité de 0.5 (50%) */
   z-index: 1;
 }
 .home_heroIntro_content {
@@ -125,16 +124,22 @@ html, body {
 .home_aboutUs {
   padding: 5% 10%;
 }
+.home_aboutUs_content {
+  gap: 3em;
+}
 .home_aboutUs_content--left, .home_aboutUs_content--right {
   flex-direction: column;
   flex-basis: 50%;
   gap: 1em;
 }
 .home_aboutUs_content--right {
-  max-height: 200px;
+  max-width: 40vw;
+  width: 50%;
 }
 .home_aboutUs_content--right img {
   margin-top: -70px;
+  width: 100%;
+  height: auto;
 }
 
 .home_ourTeam {
@@ -179,8 +184,7 @@ html, body {
   inset: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.667);
-  /* Couleur de l'obscurcissement avec une opacité de 0.5 (50%) */
+  background-color: rgba(255, 255, 255, 0.667); /* Couleur de l'obscurcissement avec une opacité de 0.5 (50%) */
   z-index: 1;
 }
 .home_joinUs_content {

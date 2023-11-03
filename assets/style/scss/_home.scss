@@ -66,6 +66,7 @@ $sectionPadding: 5% 10%;
 
     &_content {
         @extend %dflex;
+        gap: 3em;
 
         &--left, &--right {
             @extend %dflex;
@@ -74,10 +75,15 @@ $sectionPadding: 5% 10%;
             gap: 1em;
         }
         &--right {
-            max-height: 200px;
+            // max-height: 200px;
+            max-width: 40vw;
+            width: 50%;
+
 
             img {
                 margin-top: -70px;
+                width: 100%;
+                height: auto;
             }
         }
     }
