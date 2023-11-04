@@ -10,10 +10,10 @@ html, body {
   font-size: 1rem;
 }
 
-.home_heroIntro_content, .home_aboutUs_content, .home_aboutUs_content--left, .home_aboutUs_content--right, .home_ourTeam_profiles_item, .header, .home_heroIntro, .home_heroIntro_content--details, .home_heroIntro_aside, .home_ourTeam_profiles, .home_ourTeam_seeMore, .home_joinUs_content, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
+.home_heroIntro_content, .home_aboutUs_content, .home_aboutUs_content--left, .home_aboutUs_content--right, .header, .home_heroIntro, .home_heroIntro_content--details, .home_heroIntro_aside, .home_ourTeam_profiles--main, .home_ourTeam_profiles--aside, .home_ourTeam_seeMore, .home_joinUs_content, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
   display: flex;
 }
-.home_heroIntro, .home_heroIntro_content--details, .home_heroIntro_aside, .home_ourTeam_profiles, .home_ourTeam_seeMore, .home_joinUs_content, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
+.home_heroIntro, .home_heroIntro_content--details, .home_heroIntro_aside, .home_ourTeam_profiles--main, .home_ourTeam_profiles--aside, .home_ourTeam_seeMore, .home_joinUs_content, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
   align-items: center;
   justify-content: center;
 }
@@ -163,22 +163,34 @@ html, body {
   background-color: #9BACDC;
   padding: 5% 10%;
 }
-.home_ourTeam_profiles {
-  gap: 3rem;
+.home_ourTeam h2 {
+  margin-bottom: 2em;
 }
-.home_ourTeam_profiles_item {
-  flex-basis: 24%;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+.home_ourTeam h3 {
+  margin: 0;
+  font-weight: 300;
+}
+.home_ourTeam_profiles--main {
+  gap: 3rem;
+  margin-bottom: 1em;
+}
+.home_ourTeam_profiles--main_item {
   text-align: center;
 }
-.home_ourTeam_profiles_item img {
-  max-width: 100%;
-  height: auto;
+.home_ourTeam_profiles--main_item h3 {
+  font-size: 2rem;
 }
-.home_ourTeam_profiles_item h3 {
-  margin: 0;
+.home_ourTeam_profiles--main_item span {
+  font-weight: 700;
+}
+.home_ourTeam_profiles--aside {
+  gap: 2rem;
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid black;
+}
+.home_ourTeam_profiles--aside_item {
+  text-align: center;
 }
 .home_ourTeam_seeMore {
   margin-top: 3.5rem;
