@@ -10,10 +10,10 @@ html, body {
   font-size: 1rem;
 }
 
-.home_heroIntro_content, .home_aboutUs_content, .home_aboutUs_content--left, .home_aboutUs_content--right, .home_ourTeam_profiles_item, .header, .home_heroIntro, .home_heroIntro_content--details, .home_ourTeam_profiles, .home_ourTeam_seeMore, .home_joinUs_content, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
+.home_heroIntro_content, .home_aboutUs_content, .home_aboutUs_content--left, .home_aboutUs_content--right, .home_ourTeam_profiles_item, .header, .home_heroIntro, .home_heroIntro_content--details, .home_heroIntro_aside, .home_ourTeam_profiles, .home_ourTeam_seeMore, .home_joinUs_content, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
   display: flex;
 }
-.home_heroIntro, .home_heroIntro_content--details, .home_ourTeam_profiles, .home_ourTeam_seeMore, .home_joinUs_content, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
+.home_heroIntro, .home_heroIntro_content--details, .home_heroIntro_aside, .home_ourTeam_profiles, .home_ourTeam_seeMore, .home_joinUs_content, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
   align-items: center;
   justify-content: center;
 }
@@ -86,8 +86,12 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  gap: 5%;
   position: relative;
   overflow: hidden;
+}
+.home_heroIntro > *:not(.home_heroIntro_bgdFilter) {
+  flex-basis: 50%;
 }
 .home_heroIntro_bgdFilter {
   position: absolute;
@@ -101,9 +105,9 @@ html, body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  min-width: 50%;
   margin-block: auto;
-  margin-inline: 10%;
-  padding-right: 25%;
+  margin-left: 10%;
   color: white;
   z-index: 2;
 }
@@ -119,6 +123,18 @@ html, body {
 }
 .home_heroIntro_content p {
   font-weight: 300;
+}
+.home_heroIntro_aside {
+  max-height: 80%;
+  width: auto;
+  margin-right: 10%;
+  z-index: 2;
+}
+.home_heroIntro_aside img {
+  max-height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 3px;
 }
 
 .home_aboutUs {
@@ -140,6 +156,7 @@ html, body {
   margin-top: -70px;
   width: 100%;
   height: auto;
+  border-radius: 3px;
 }
 
 .home_ourTeam {
