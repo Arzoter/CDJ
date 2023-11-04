@@ -247,6 +247,15 @@ $sectionPadding: 5% 10%;
 
     &_carrousel {
         @extend %dflex--center;
+        gap: 3rem;
+
+        height: 80px;
+
+        img {
+            max-height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
     }
 }
 

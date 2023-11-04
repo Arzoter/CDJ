@@ -226,6 +226,16 @@ html, body {
 .home_sponsors {
   padding: 5% 10%;
 }
+.home_sponsors_carrousel {
+  gap: 3rem;
+  height: 80px;
+}
+.home_sponsors_carrousel img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
 @media screen and (max-width: 750px) {
   .home_heroIntro_content {
     padding-right: unset;
