@@ -261,6 +261,13 @@ $sectionPadding: 5% 10%;
 
 
 
+@media screen and (max-width: 1150px) {
+    .home_sponsors {
+        &_carrousel {
+            flex-wrap: wrap;
+        }
+    }
+}
 @media screen and (max-width: 750px) {
     .home_heroIntro {
         &_content {

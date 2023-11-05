@@ -236,6 +236,11 @@ html, body {
   object-fit: contain;
 }
 
+@media screen and (max-width: 1150px) {
+  .home_sponsors_carrousel {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 750px) {
   .home_heroIntro_content {
     padding-right: unset;
