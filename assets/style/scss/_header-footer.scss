@@ -1,11 +1,11 @@
 @use 'assets' as *;
+$headerHeight: 4.5rem;
 
 .header {
     @extend %dflex;
     justify-content: space-between;
     align-items: center;
     
-    $headerHeight: 4.5rem;
     max-height: $headerHeight;
     
     padding-bottom: 2px;

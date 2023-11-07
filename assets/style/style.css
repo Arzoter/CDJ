@@ -10,10 +10,10 @@ html, body {
   font-size: 1rem;
 }
 
-.asso_aboutUs_historyIdentity, .asso_aboutUs_ourValues_content, .asso_aboutUs_whatWhy_content, .asso_aboutUs_missions_list, .asso_aboutUs_missions_list_item, .asso_aboutUs_actions_list, .asso_aboutUs_actions_list_item, .home_heroIntro_content, .home_aboutUs_content, .home_aboutUs_content--left, .home_aboutUs_content--right, .header, .home_heroIntro, .home_heroIntro_content--details, .home_heroIntro_aside, .home_ourTeam_profiles--main, .home_ourTeam_profiles--aside, .home_ourTeam_seeMore, .home_joinUs_content, .home_joinUs_content--text, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
+.asso_aboutUs_historyIdentity, .asso_aboutUs_ourValues_content, .asso_aboutUs_whatWhy_content, .asso_aboutUs_missions_list, .asso_aboutUs_missions_list_item, .asso_aboutUs_actions_list, .asso_aboutUs_actions_list_item, .home_heroIntro_content, .home_aboutUs_content, .home_aboutUs_content--left, .home_aboutUs_content--right, .header, .comingSoon, .home_heroIntro, .home_heroIntro_content--details, .home_heroIntro_aside, .home_ourTeam_profiles--main, .home_ourTeam_profiles--aside, .home_ourTeam_seeMore, .home_joinUs_content, .home_joinUs_content--text, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
   display: flex;
 }
-.home_heroIntro, .home_heroIntro_content--details, .home_heroIntro_aside, .home_ourTeam_profiles--main, .home_ourTeam_profiles--aside, .home_ourTeam_seeMore, .home_joinUs_content, .home_joinUs_content--text, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
+.comingSoon, .home_heroIntro, .home_heroIntro_content--details, .home_heroIntro_aside, .home_ourTeam_profiles--main, .home_ourTeam_profiles--aside, .home_ourTeam_seeMore, .home_joinUs_content, .home_joinUs_content--text, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
   align-items: center;
   justify-content: center;
 }
@@ -453,6 +453,11 @@ html, body {
   .asso_aboutUs_missions_list_item, .asso_aboutUs_actions_list_item {
     flex-basis: 100%;
   }
+}
+.comingSoon {
+  width: 100%;
+  height: calc(100vh - 4.5rem);
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
