@@ -1,0 +1,71 @@
+@use 'assets' as *;
+
+.projects {
+    h1 {
+        margin: 0;
+        margin-left: 10%;
+        margin-top: 50px;
+
+        font-weight: 300;
+    }
+
+    &_list {
+        @extend %dflex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 3rem;
+
+        padding: 50px 10%;
+
+        &_item {
+            @extend %dflex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            flex-basis: 47%;
+
+            border-radius: 5px;
+            overflow: hidden;
+
+            box-shadow: 1px -1px 30px -12px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 1px -1px 30px -12px rgba(0,0,0,0.75);
+            -moz-box-shadow: 1px -1px 30px -12px rgba(0,0,0,0.75);
+            // border: 1px solid $blueCDJ;
+
+            transition: 0.25s;
+
+            &:hover {
+                transform: scale(1.05);
+
+                h2 {
+                    color: $redCDJ;
+                }
+            }
+
+            &_img {
+                max-width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+            &_txt {
+                padding: 1rem;
+
+                h2 {
+                    margin-top: 0;
+                    margin-bottom: .75rem;
+                    color: $blueCDJ;
+                    transition: .25s;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
