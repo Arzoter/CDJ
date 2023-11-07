@@ -49,12 +49,10 @@ $headerHeight: 4.5rem;
 
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 675px) {
     .header {
-        &_logo {
-            h1 {
-                display: none;
-            }
+        &_nav {
+            display: none;
         }
     }
 }

@@ -264,7 +264,8 @@ $sectionGap: 3rem;
             @extend %dflex--center;
             flex-wrap: wrap;
             p {
-                font-size: 1.5em;                
+                font-size: 1.5em;    
+                text-align: center;            
             }
         }
     }
@@ -298,10 +299,58 @@ $sectionGap: 3rem;
         }
     }
 }
+@media screen and (max-width: 800px) {
+    .home_heroIntro {
+        &_content {
+            margin-left: 0;
+            flex-basis: 90% !important;
+        }
+        aside {
+            display: none;
+        }
+    }
+}
 @media screen and (max-width: 750px) {
     .home_heroIntro {
         &_content {
             padding-right: unset;
+        }
+    }
+
+    .home_aboutUs_content {
+        &--left {
+            flex-basis: 100%;
+        }
+        &--right {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .home_ourTeam_profiles {
+        &--main, &--aside {
+            flex-wrap: wrap;
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .home_heroIntro_content {
+        h1 {
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+        }
+        &--details {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 10px;
+            font-size: 1.15rem;
+
+            .separator {
+                display: none;
+                &--round {
+                    @extend .separator;
+                }
+            }
         }
     }
 }

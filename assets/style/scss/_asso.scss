@@ -237,8 +237,30 @@
         }
     }
 }
+
+
+
+
+
 @media screen and (max-width: 725px) {
     .asso_aboutUs_missions_list_item {
         flex-basis: 100%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .asso_aboutUs_historyIdentity, .asso_aboutUs_whatWhy_content {
+        flex-wrap: wrap;
+
+        >* {
+            flex-basis: 100%;
+        }
+        &--separator {
+            display: none;
+        }
+    }
+    .asso_aboutUs_ourValues_content {
+        img {
+            display: none;
+        }
     }
 }
