@@ -1,0 +1,244 @@
+@use 'assets' as *;
+
+.asso {
+    
+    h1 {
+        margin-top: 50px;
+        margin-left: 10%;
+        margin-bottom: 0;
+        font-weight: 300;
+        font-size: 1rem;
+        color: $redCDJ;
+    }
+    
+    &_aboutUs {
+        h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 300;
+            font-size: 3rem;
+            letter-spacing: -2px;
+            color: $blueCDJ;
+            &.--samePadAsSection {
+                margin-left: 10%;                
+            }
+            &.--fullUnderline {
+                width: 100%;
+                padding-bottom: .5em;
+                border-bottom: 1px solid rgb(48, 48, 48);
+            }
+            
+            span {
+                color: $redCDJ;                
+            }
+        }
+        h3 {
+            font-size: 2rem;
+            font-weight: 300;
+            color: rgb(98, 98, 98);
+            
+            span {
+                font-weight: 400;
+                color: $blueCDJ;
+            }
+        }
+        p {
+            text-align: justify;
+            font-weight: 300;
+            font-size: 1.25rem;
+            letter-spacing: 1px;
+            line-height: 1.35em;
+        }
+        $section_gap: 3rem;
+        
+        &_historyIdentity {
+            @extend %dflex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: $section_gap;
+            
+            &--left, &--right {
+                // @extend .asso_aboutUs_historyIdentity;
+                flex-basis: 50%;
+            }
+            &--separator {
+                flex: 0 0 1px;
+                min-width: 1px;
+                height: 100%;
+                min-height: 300px;
+                background-color: $redCDJ;
+                align-self: center;
+            }
+            h3 {
+                margin-top: 0;
+                text-align: center;
+                // color: $blueCDJ;
+                // text-decoration: underline 2px $redCDJ;
+            }
+        }
+        &_ourValues {
+            background-color: rgb(244, 244, 244);
+
+            h3 {
+                // padding-top: $section_gap;
+                margin-top: 0;
+                padding-bottom: calc($section_gap / 4);
+                margin-bottom: calc($section_gap / 4);
+                border-bottom: 1px solid $redCDJ;
+                width: 40%;
+                margin-inline: auto;
+                text-align: center;
+                color: black
+            }
+            &_content {
+                
+                @extend .asso_aboutUs_historyIdentity;
+                align-items: center;
+                gap: $section_gap;
+
+                // &>* {
+                //     flex-basis: 50%;
+                // }
+                p {
+                    text-align: left;
+                }
+                img {
+                    // height: fit-content;
+                    // width: auto;
+                    max-width: calc(50% - $section_gap);
+                    object-fit: contain;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        &_whatWhy {
+            h2 {
+                // margin-top: 5rem;
+                text-align: end;
+            }
+
+            &_content {
+                @extend %dflex;
+                gap: $section_gap;
+                margin-top: $section_gap;
+
+                h3 {
+                    margin-top: 0;
+                }
+                p {
+                    font-size: 1.1rem;
+                }
+
+                &--left, &--right {
+                    flex-basis: 50%;
+                }
+            }
+        }
+
+        &_missions {
+            padding-top: 0;
+            &_list {
+                margin-top: $section_gap;
+                @extend %dflex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                gap: 2em;
+
+                &_item {
+                    @extend %dflex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: .75em;
+                    flex-basis: 47%;
+                    font-size: 1.5rem;
+                    &--text {
+                        >* {
+                            margin: 0;
+                        }
+                        h3 {
+                            font-size: 1.75rem;
+                            text-transform: uppercase;
+                        }
+                        p {
+                            margin-top: .5em;
+                            font-size: 1rem;
+                            line-height: 1.25em;
+                            letter-spacing: 1px;
+                        }
+                    }
+
+                    ion-icon {
+                        color: grey;
+                        font-size: 35px;
+                        min-height: 35px;
+                        min-width: 35px;
+                    }
+                }
+            }
+        }
+
+        &_actions {
+            @extend .asso_aboutUs_missions;
+            h2 {
+                text-align: right;
+            }
+
+            &_list {
+                @extend .asso_aboutUs_missions_list;
+                
+                &_item {
+                    @extend .asso_aboutUs_missions_list_item;
+
+                    &--text {
+                        >* {
+                            margin: 0;
+                        }
+                        h3 {
+                            font-size: 1.75rem;
+                            text-transform: uppercase;
+                        }
+                        p {
+                            margin-top: .5em;
+                            font-size: 1rem;
+                            line-height: 1.25em;
+                            letter-spacing: 1px;
+                        }
+                    }
+
+                    ion-icon {
+                        color: grey;
+                        font-size: 35px;
+                        min-height: 35px;
+                        min-width: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 1050px) {
+    $section_gap: 3rem;
+    .asso_aboutUs_ourValues_content {
+        align-items: flex-start;
+        margin-top: $section_gap;
+
+        p {
+            margin: 0;
+        }
+        img {
+            max-width: 30%;
+        }
+    }
+}
+@media screen and (max-width: 725px) {
+    .asso_aboutUs_missions_list_item {
+        flex-basis: 100%;
+    }
+}

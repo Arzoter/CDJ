@@ -10,10 +10,10 @@ html, body {
   font-size: 1rem;
 }
 
-.home_heroIntro_content, .home_aboutUs_content, .home_aboutUs_content--left, .home_aboutUs_content--right, .header, .home_heroIntro, .home_heroIntro_content--details, .home_heroIntro_aside, .home_ourTeam_profiles--main, .home_ourTeam_profiles--aside, .home_ourTeam_seeMore, .home_joinUs_content, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
+.asso_aboutUs_historyIdentity, .asso_aboutUs_ourValues_content, .asso_aboutUs_whatWhy_content, .asso_aboutUs_missions_list, .asso_aboutUs_missions_list_item, .asso_aboutUs_actions_list, .asso_aboutUs_actions_list_item, .home_heroIntro_content, .home_aboutUs_content, .home_aboutUs_content--left, .home_aboutUs_content--right, .header, .home_heroIntro, .home_heroIntro_content--details, .home_heroIntro_aside, .home_ourTeam_profiles--main, .home_ourTeam_profiles--aside, .home_ourTeam_seeMore, .home_joinUs_content, .home_joinUs_content--text, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
   display: flex;
 }
-.home_heroIntro, .home_heroIntro_content--details, .home_heroIntro_aside, .home_ourTeam_profiles--main, .home_ourTeam_profiles--aside, .home_ourTeam_seeMore, .home_joinUs_content, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
+.home_heroIntro, .home_heroIntro_content--details, .home_heroIntro_aside, .home_ourTeam_profiles--main, .home_ourTeam_profiles--aside, .home_ourTeam_seeMore, .home_joinUs_content, .home_joinUs_content--text, .home_sponsors_carrousel, .header_logo, .header_nav, .header_nav--connect {
   align-items: center;
   justify-content: center;
 }
@@ -48,6 +48,10 @@ html, body {
   font-weight: 500;
 }
 
+.sectionPadding {
+  padding: 50px 10%;
+}
+
 .header {
   justify-content: space-between;
   align-items: center;
@@ -80,6 +84,23 @@ html, body {
     display: none;
   }
 }
+.home h2 {
+  font-weight: 300;
+  color: #262d7c;
+}
+.home h2.--reversedColor {
+  color: #d1412a;
+}
+.home h2.--noColor {
+  width: fit-content;
+  color: rgb(28, 28, 28);
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid #d1412a;
+}
+.home h2 span {
+  color: #d1412a;
+}
+
 .home_heroIntro {
   height: calc(100vh - 4.5rem);
   background-image: url("../img/eventImg.png");
@@ -160,7 +181,7 @@ html, body {
 }
 
 .home_ourTeam {
-  background-color: #9BACDC;
+  background-color: #cbd9ff;
   padding: 5% 10%;
 }
 .home_ourTeam h2 {
@@ -168,25 +189,26 @@ html, body {
 }
 .home_ourTeam h3 {
   margin: 0;
-  font-weight: 300;
+  font-weight: 400;
 }
 .home_ourTeam_profiles--main {
   gap: 3rem;
-  margin-bottom: 1em;
+  margin-bottom: 3rem;
 }
 .home_ourTeam_profiles--main_item {
   text-align: center;
 }
 .home_ourTeam_profiles--main_item h3 {
   font-size: 2rem;
+  font-weight: 500;
 }
 .home_ourTeam_profiles--main_item span {
-  font-weight: 700;
+  font-weight: 300;
 }
 .home_ourTeam_profiles--aside {
   gap: 2rem;
-  margin-top: 1em;
-  padding-top: 1em;
+  margin-top: 3rem;
+  padding-top: 3rem;
   border-top: 1px solid black;
 }
 .home_ourTeam_profiles--aside_item {
@@ -222,6 +244,12 @@ html, body {
   position: relative;
   z-index: 2;
 }
+.home_joinUs_content--text {
+  flex-wrap: wrap;
+}
+.home_joinUs_content--text p {
+  font-size: 1.5em;
+}
 
 .home_sponsors {
   padding: 5% 10%;
@@ -244,6 +272,186 @@ html, body {
 @media screen and (max-width: 750px) {
   .home_heroIntro_content {
     padding-right: unset;
+  }
+}
+.asso h1 {
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #d1412a;
+}
+.asso_aboutUs h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: -2px;
+  color: #262d7c;
+}
+.asso_aboutUs h2.--samePadAsSection {
+  margin-left: 10%;
+}
+.asso_aboutUs h2.--fullUnderline {
+  width: 100%;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid rgb(48, 48, 48);
+}
+.asso_aboutUs h2 span {
+  color: #d1412a;
+}
+.asso_aboutUs h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgb(98, 98, 98);
+}
+.asso_aboutUs h3 span {
+  font-weight: 400;
+  color: #262d7c;
+}
+.asso_aboutUs p {
+  text-align: justify;
+  font-weight: 300;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  line-height: 1.35em;
+}
+.asso_aboutUs_historyIdentity, .asso_aboutUs_ourValues_content {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+.asso_aboutUs_historyIdentity--left, .asso_aboutUs_historyIdentity--right {
+  flex-basis: 50%;
+}
+.asso_aboutUs_historyIdentity--separator {
+  flex: 0 0 1px;
+  min-width: 1px;
+  height: 100%;
+  min-height: 300px;
+  background-color: #d1412a;
+  align-self: center;
+}
+.asso_aboutUs_historyIdentity h3, .asso_aboutUs_ourValues_content h3 {
+  margin-top: 0;
+  text-align: center;
+}
+.asso_aboutUs_ourValues {
+  background-color: rgb(244, 244, 244);
+}
+.asso_aboutUs_ourValues h3 {
+  margin-top: 0;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #d1412a;
+  width: 40%;
+  margin-inline: auto;
+  text-align: center;
+  color: black;
+}
+.asso_aboutUs_ourValues_content {
+  align-items: center;
+  gap: 3rem;
+}
+.asso_aboutUs_ourValues_content p {
+  text-align: left;
+}
+.asso_aboutUs_ourValues_content img {
+  max-width: calc(50% - 3rem);
+  object-fit: contain;
+  border-radius: 5px;
+}
+.asso_aboutUs_whatWhy h2 {
+  text-align: end;
+}
+.asso_aboutUs_whatWhy_content {
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.asso_aboutUs_whatWhy_content h3 {
+  margin-top: 0;
+}
+.asso_aboutUs_whatWhy_content p {
+  font-size: 1.1rem;
+}
+.asso_aboutUs_whatWhy_content--left, .asso_aboutUs_whatWhy_content--right {
+  flex-basis: 50%;
+}
+.asso_aboutUs_missions, .asso_aboutUs_actions {
+  padding-top: 0;
+}
+.asso_aboutUs_missions_list, .asso_aboutUs_actions_list {
+  margin-top: 3rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.asso_aboutUs_missions_list_item, .asso_aboutUs_actions_list_item {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.75em;
+  flex-basis: 47%;
+  font-size: 1.5rem;
+}
+.asso_aboutUs_missions_list_item--text > * {
+  margin: 0;
+}
+.asso_aboutUs_missions_list_item--text h3 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+.asso_aboutUs_missions_list_item--text p {
+  margin-top: 0.5em;
+  font-size: 1rem;
+  line-height: 1.25em;
+  letter-spacing: 1px;
+}
+.asso_aboutUs_missions_list_item ion-icon, .asso_aboutUs_actions_list_item ion-icon {
+  color: grey;
+  font-size: 35px;
+  min-height: 35px;
+  min-width: 35px;
+}
+.asso_aboutUs_actions h2 {
+  text-align: right;
+}
+.asso_aboutUs_actions_list_item--text > * {
+  margin: 0;
+}
+.asso_aboutUs_actions_list_item--text h3 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+.asso_aboutUs_actions_list_item--text p {
+  margin-top: 0.5em;
+  font-size: 1rem;
+  line-height: 1.25em;
+  letter-spacing: 1px;
+}
+.asso_aboutUs_actions_list_item ion-icon {
+  color: grey;
+  font-size: 35px;
+  min-height: 35px;
+  min-width: 35px;
+}
+
+@media screen and (min-width: 1050px) {
+  .asso_aboutUs_ourValues_content {
+    align-items: flex-start;
+    margin-top: 3rem;
+  }
+  .asso_aboutUs_ourValues_content p {
+    margin: 0;
+  }
+  .asso_aboutUs_ourValues_content img {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 725px) {
+  .asso_aboutUs_missions_list_item, .asso_aboutUs_actions_list_item {
+    flex-basis: 100%;
   }
 }
 

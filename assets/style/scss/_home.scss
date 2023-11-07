@@ -2,6 +2,27 @@
 @use 'header-footer' as *;
 
 $sectionPadding: 5% 10%;
+$sectionGap: 3rem;
+
+.home {
+    h2 {
+        font-weight: 300;
+        color: $blueCDJ;
+        &.--reversedColor {
+            color: $redCDJ;
+        }
+        &.--noColor {
+            width: fit-content;
+            color: rgb(28, 28, 28);
+            padding-bottom: .25em;
+            border-bottom: 1px solid $redCDJ;
+        }
+        
+        span {
+            color: $redCDJ;
+        }
+    }
+}
 
 .home_heroIntro {
     // $heroSize: $headerHeight;
@@ -117,7 +138,7 @@ $sectionPadding: 5% 10%;
 
 
 .home_ourTeam {
-    background-color: #9BACDC;
+    background-color: #cbd9ff;
     padding: $sectionPadding;
 
     h2 {
@@ -125,7 +146,7 @@ $sectionPadding: 5% 10%;
     }
     h3 {
         margin: 0;
-        font-weight: 300
+        font-weight: 400
     }
 
     &_profiles--main {
@@ -133,7 +154,7 @@ $sectionPadding: 5% 10%;
         @extend %dflex--center;
         gap: 3rem;
 
-        margin-bottom: 1em;
+        margin-bottom: $sectionGap;
 
         // OLD
         // &_item {
@@ -158,10 +179,11 @@ $sectionPadding: 5% 10%;
             text-align: center;
 
             h3 {
-                font-size: 2rem
+                font-size: 2rem;
+                font-weight: 500;
             }
             span {
-                font-weight: 700
+                font-weight: 300;
             }
         }
     }
@@ -171,8 +193,8 @@ $sectionPadding: 5% 10%;
         @extend %dflex--center;
         gap: 2rem;
 
-        margin-top: 1em;
-        padding-top: 1em;
+        margin-top: $sectionGap;
+        padding-top: $sectionGap;
         border-top: 1px solid black;
 
         // OLD
@@ -237,6 +259,14 @@ $sectionPadding: 5% 10%;
         gap: 2rem;
         position: relative;
         z-index: 2;
+        
+        &--text {
+            @extend %dflex--center;
+            flex-wrap: wrap;
+            p {
+                font-size: 1.5em;                
+            }
+        }
     }
 }
 
